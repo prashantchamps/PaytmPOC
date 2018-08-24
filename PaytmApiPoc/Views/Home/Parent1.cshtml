@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Parent1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Pay your child's school fees</h2>
+<p>Below is the list of your children</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>School</th>
+            <th>Pending Fees</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td>St. Marry High School</td>
+            <td>Rs.1000</td>
+            <td><a href="@Url.Action("CreatePayment", "Home")"><img style="width:70px;" src="@Url.Content("~/Images/Paytm_logo.jpg")" /></a></td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+            <td>Eccles School</td>
+            <td>Rs.5000</td>
+            <td>Paytm facility not available.</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <td>Jurassic park School</td>
+            <td>Rs.2000</td>
+            <td>Paytm facility not available.</td>
+        </tr>
+    </tbody>
+</table>
+

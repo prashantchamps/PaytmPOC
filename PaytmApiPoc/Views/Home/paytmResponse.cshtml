@@ -1,0 +1,14 @@
+﻿@model PaytmApiPoc.Models.PaytmResponse
+@{
+    ViewBag.Title = "Paytm Response";
+}
+
+@if (Model.STATUS == "TXN_SUCCESS")
+{
+    <p><h3>Payment Successful.</h3></p>
+}
+else
+{
+    <h2>Error.</h2>
+    <p>An error has encountered during the transaction.</p>
+}
